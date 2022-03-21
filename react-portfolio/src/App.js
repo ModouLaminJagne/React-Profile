@@ -1,5 +1,5 @@
 import './App.css';
-// import Header from './Components/Header/Header';
+import Header from './Components/Header/Header';
 // import Nav from './Components/Nav/Nav';
 import About from './Components/About/About';
 // import Services from './Components/Services/Services';
@@ -13,7 +13,7 @@ import React from 'react';
 const App = () => {
   return (
     <div className="bg">
-      {/* <Header /> */}
+      <Header />
       {/* <Nav /> */}
       <About />
       {/* <Experience /> */}

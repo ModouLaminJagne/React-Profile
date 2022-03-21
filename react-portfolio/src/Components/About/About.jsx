@@ -1,7 +1,7 @@
 import React from 'react'
 import mee2 from '../../Assets/mee2.jpg';
 import {FaAward} from 'react-icons/fa'
-import { FaUsers } from 'react-icons/fa';
+import { MdOutlineSchool } from 'react-icons/md';
 import { VscFolderLibrary } from 'react-icons/vsc';
 import './About.css'
 
@@ -9,7 +9,7 @@ import './About.css'
 const About = () => {
   return (
     <section id="about">
-      <h5>GEt To Know</h5>
+      <h5>Get To Know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__me">
@@ -20,25 +20,25 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>3+ years working</small>
+              <MdOutlineSchool className="about__icon" />
+              <h5>Education</h5>
+              <small>Undergraduate Student</small>
             </article>
             <article className="about__card">
-              <FaUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>100+ worldwide</small>
+              <FaAward className="about__icon" />
+              <h5>Experience</h5>
+              <small>2 years Development</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>20+ completed</small>
+              <small>5 completed</small>
             </article>
           </div>
-          <p>
-            lorem ipsum blaa blaa blaa🤪
-          </p>
-          <a href='#contact' className='btn btn-primary'>Let's talk</a>
+          <p>lorem ipsum blaa blaa blaa🤪</p>
+          <a href="#contact" className="btn btn-primary">
+            Let's talk
+          </a>
         </div>
       </div>
     </section>
