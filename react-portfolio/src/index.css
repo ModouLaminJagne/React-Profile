@@ -57,7 +57,7 @@ h5 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 section {
@@ -67,7 +67,7 @@ section {
 section > h2,
 section > h5 {
   text-align: center;
-  color: var(--color-light);
+  color: var(--color-white);
 }
 
 section > h2 {
