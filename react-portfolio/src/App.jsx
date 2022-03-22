@@ -7,7 +7,7 @@ import Experience from './Components/Experience/Experience';
 // import Footer from './Components/Footer/Footer';
 // import Contacts from './Components/Contact/Contacts';
 import Portfolio from './Components/Portfolio/Portfolio';
-// import Testimonials from './Components/Testimonial/Testimonials';
+import Testimonials from './Components/Testimonial/Testimonials';
 import React from 'react';
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
       <Experience />
       <Services />
       <Portfolio />
-      {/* <Testimonials /> */}
+      <Testimonials />
       {/* <Contacts /> */}
       {/* <Footer /> */}
     </div>
