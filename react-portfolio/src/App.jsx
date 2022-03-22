@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Components/Header/Header';
-// import Nav from './Components/Nav/Nav';
+import Nav from './Components/Nav/Nav';
 import About from './Components/About/About';
 // import Services from './Components/Services/Services';
 // import Experience from './Components/Experience/Experience';
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className="bg">
       <Header />
-      {/* <Nav /> */}
+      <Nav />
       <About />
       {/* <Experience /> */}
       {/* <Services /> */}
