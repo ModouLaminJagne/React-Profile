@@ -5,6 +5,7 @@ import { AiOutlineUser } from 'react-icons/ai';
 import { RiServiceLine } from 'react-icons/ri';
 import { IoIosContact } from 'react-icons/io';
 import { BiBook } from 'react-icons/bi';
+import { AiOutlineProfile } from 'react-icons/ai';
 import { useState } from 'react';
 
 const Nav = () => {
@@ -45,6 +46,13 @@ const Nav = () => {
         className={activeNave === '#contact' ? 'active' : ''}
       >
         <IoIosContact />
+      </a>
+      <a
+        href="#portfolio"
+        onClick={() => setActiveNav('#portfolio')}
+        className={activeNave === '#portfolio' ? 'active' : ''}
+      >
+        <AiOutlineProfile />
       </a>
     </nav>
   );
