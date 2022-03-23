@@ -5,7 +5,7 @@ import About from './Components/About/About';
 import Services from './Components/Services/Services';
 import Experience from './Components/Experience/Experience';
 // import Footer from './Components/Footer/Footer';
-// import Contacts from './Components/Contact/Contacts';
+import Contacts from './Components/Contact/Contacts';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Testimonials from './Components/Testimonial/Testimonials';
 import React from 'react';
@@ -20,7 +20,7 @@ const App = () => {
       <Services />
       <Portfolio />
       <Testimonials />
-      {/* <Contacts /> */}
+      <Contacts />
       {/* <Footer /> */}
     </div>
   );

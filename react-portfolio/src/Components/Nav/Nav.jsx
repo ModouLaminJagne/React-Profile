@@ -41,18 +41,18 @@ const Nav = () => {
         <RiServiceLine />
       </a>
       <a
-        href="#contact"
-        onClick={() => setActiveNav('#contact')}
-        className={activeNave === '#contact' ? 'active' : ''}
-      >
-        <IoIosContact />
-      </a>
-      <a
         href="#portfolio"
         onClick={() => setActiveNav('#portfolio')}
         className={activeNave === '#portfolio' ? 'active' : ''}
       >
         <AiOutlineProfile />
+      </a>
+      <a
+        href="#contact"
+        onClick={() => setActiveNav('#contact')}
+        className={activeNave === '#contact' ? 'active' : ''}
+      >
+        <IoIosContact />
       </a>
     </nav>
   );

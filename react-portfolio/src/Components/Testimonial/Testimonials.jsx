@@ -1,6 +1,6 @@
 import React from 'react'
 import './Testimonials.css'
-import mee1 from '../../Assets/mee1.jpg';
+import mee from '../../Assets/mee.jpg';
 // import i16 from'../../Assets/i16.jpg';
 // import i16 from'../../Assets/i16.jpg';
 // import i16 from'../../Assets/i16.jpg';
@@ -34,28 +34,28 @@ const Testimonials = () => {
       >
         <SwiperSlide className="testimonial">
           <div className="client__avater">
-            <img src={mee1} alt="CA" />
+            <img src={mee} alt="CA" />
           </div>
           <h5 className="client__name">Someone</h5>
           <small className="client__review">lorem ipsum blaa blaa blaa🤪</small>
         </SwiperSlide>
         <SwiperSlide className="testimonial">
           <div className="client__avater">
-            <img src={mee1} alt="CA" />
+            <img src={mee} alt="CA" />
           </div>
           <h5 className="client__name">Someone</h5>
           <small className="client__review">lorem ipsum blaa blaa blaa🤪</small>
         </SwiperSlide>
         <SwiperSlide className="testimonial">
           <div className="client__avater">
-            <img src={mee1} alt="CA" />
+            <img src={mee} alt="CA" />
           </div>
           <h5 className="client__name">Someone</h5>
           <small className="client__review">lorem ipsum blaa blaa blaa🤪</small>
         </SwiperSlide>
         <SwiperSlide className="testimonial">
           <div className="client__avater">
-            <img src={mee1} alt="CA" />
+            <img src={mee} alt="CA" />
           </div>
           <h5 className="client__name">Someone</h5>
           <small className="client__review">lorem ipsum blaa blaa blaa🤪</small>
