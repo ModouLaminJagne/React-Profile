@@ -7,6 +7,12 @@ import DA from '../../Assets/DA.webp'
 import Hacker from '../../Assets/Hacker.webp'
 import chip from '../../Assets/chip.webp'
 
+const data = [{
+  id: 1,
+  image: BC,
+  title:
+}]
+
 const Portfolio = () => {
   return (
     <section id="portfolio">
