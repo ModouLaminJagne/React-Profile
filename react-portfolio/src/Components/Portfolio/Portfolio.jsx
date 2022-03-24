@@ -7,11 +7,50 @@ import DA from '../../Assets/DA.webp'
 import Hacker from '../../Assets/Hacker.webp'
 import chip from '../../Assets/chip.webp'
 
-const data = [{
-  id: 1,
-  image: BC,
-  title:
-}]
+const data = [
+  {
+    id: 1,
+    image: BC,
+    title: 'Am blocking the chains',
+    github: 'https:/github.com',
+    // github: 'https:/github.com',
+  },
+  {
+    id: 1,
+    image: ML,
+    title: 'Am blocking the chains',
+    github: 'https:/github.com',
+    // github: 'https:/github.com',
+  },
+  {
+    id: 1,
+    image: MTVers,
+    title: 'Am blocking the chains',
+    github: 'https:/github.com',
+    // github: 'https:/github.com',
+  },
+  {
+    id: 1,
+    image: DA,
+    title: 'Am blocking the chains',
+    github: 'https:/github.com',
+    // github: 'https:/github.com',
+  },
+  {
+    id: 1,
+    image: Hacker,
+    title: 'Am blocking the chains',
+    github: 'https:/github.com',
+    // github: 'https:/github.com',
+  },
+  {
+    id: 1,
+    image: chip,
+    title: 'Am blocking the chains',
+    github: 'https:/github.com',
+    // github: 'https:/github.com',
+  },
+];
 
 const Portfolio = () => {
   return (
@@ -20,151 +59,36 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={BC} alt="bc" />
-          </div>
-          <h3>Am blocking the chains</h3>
-          <div className=" portfolio__item-cta">
-            <a
-              href="https:/github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn"
-            >
-              Github
-            </a>
-            <a
-              href="https:/github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-primary"
-            >
-              Github
-            </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={ML} alt="bc" />
-          </div>
-          <h3>I learn like a machine</h3>
-
-          <div className=" portfolio__item-cta">
-            <a
-              href="https:/github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn"
-            >
-              Github
-            </a>
-            <a
-              href="https:/github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-primary"
-            >
-              Github
-            </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={MTVers} alt="bc" />
-          </div>
-          <h3>I'm a metaverse madee</h3>
-          <div className=" portfolio__item-cta">
-            <a
-              href="https:/github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn"
-            >
-              Github
-            </a>
-            <a
-              href="https:/github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-primary"
-            >
-              Github
-            </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={DA} alt="bc" />
-          </div>
-          <h3>Am a data analyst</h3>
-          <div className=" portfolio__item-cta">
-            <a
-              href="https:/github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn"
-            >
-              Github
-            </a>
-            <a
-              href="https:/github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-primary"
-            >
-              Github
-            </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={Hacker} alt="bc" />
-          </div>
-          <h3>Hack Hack Hack</h3>
-          <div className=" portfolio__item-cta">
-            <a
-              href="https:/github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn"
-            >
-              Github
-            </a>
-            <a
-              href="https:/github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-primary"
-            >
-              Github
-            </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={chip} alt="bc" />
-          </div>
-          <h3>I like chips</h3>
-          <div className=" portfolio__item-cta">
-            <a
-              href="https:/github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn"
-            >
-              Github
-            </a>
-            <a
-              href="https:/github.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-primary"
-            >
-              Github
-            </a>
-          </div>
-        </article>
+        {
+          data.map(({ id, image, title, github, }) => {
+            return (
+              <article key={id} className="portfolio__item">
+                <div className="portfolio__item-image">
+                  <img src={image} alt="{title}" />
+                </div>
+                <h3>{title}</h3>
+                <div className=" portfolio__item-cta">
+                  <a
+                    href={github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn"
+                  >
+                    Github
+                  </a>
+                  <a
+                    href={github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-primary"
+                  >
+                    Github
+                  </a>
+                </div>
+              </article>
+            );
+          })
+        }
       </div>
     </section>
   );
