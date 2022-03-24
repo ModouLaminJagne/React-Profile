@@ -16,6 +16,39 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 // import 'swiper/css/scrollbar';
 
+const data = [
+  {
+    di: 1,
+    image: mee,
+    name: 'modou',
+    comment: 'lorem ipsum blaa blaa blaa🤪',
+  },
+  {
+    di: 2,
+    image: mee,
+    name: 'modou',
+    comment: 'lorem ipsum blaa blaa blaa🤪',
+  },
+  {
+    di: 3,
+    image: mee,
+    name: 'modou',
+    comment: 'lorem ipsum blaa blaa blaa🤪',
+  },
+  {
+    di: 4,
+    image: mee,
+    name: 'modou',
+    comment: 'lorem ipsum blaa blaa blaa🤪',
+  },
+  {
+    di: 5,
+    image: mee,
+    name: 'modou',
+    comment: 'lorem ipsum blaa blaa blaa🤪',
+  },
+];
+
 
 const Testimonials = () => {
   return (
@@ -32,34 +65,22 @@ const Testimonials = () => {
         pagination={{ clickable: true }}
         
       >
-        <SwiperSlide className="testimonial">
-          <div className="client__avater">
-            <img src={mee} alt="CA" />
-          </div>
-          <h5 className="client__name">Someone</h5>
-          <small className="client__review">lorem ipsum blaa blaa blaa🤪</small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial">
-          <div className="client__avater">
-            <img src={mee} alt="CA" />
-          </div>
-          <h5 className="client__name">Someone</h5>
-          <small className="client__review">lorem ipsum blaa blaa blaa🤪</small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial">
-          <div className="client__avater">
-            <img src={mee} alt="CA" />
-          </div>
-          <h5 className="client__name">Someone</h5>
-          <small className="client__review">lorem ipsum blaa blaa blaa🤪</small>
-        </SwiperSlide>
-        <SwiperSlide className="testimonial">
-          <div className="client__avater">
-            <img src={mee} alt="CA" />
-          </div>
-          <h5 className="client__name">Someone</h5>
-          <small className="client__review">lorem ipsum blaa blaa blaa🤪</small>
-        </SwiperSlide>
+        {
+          data.map(({image, name, comment }, id) => {
+            return (
+              <SwiperSlide key={id} className="testimonial">
+              <div className="client__avater">
+                <img src={image} alt={name} />
+              </div>
+              <h5 className="client__name">{name}</h5>
+              <small className="client__review">
+                {comment}
+              </small>
+            </SwiperSlide>
+            )
+          })
+        }
+        
       </Swiper>
     </section>
   );
